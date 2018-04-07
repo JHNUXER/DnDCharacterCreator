@@ -1,0 +1,26 @@
+body .batang {
+  font-family:"Batang";
+}
+body {
+  background-color:#141414;
+  color: #CCC;
+}
+select {
+  color:#CCC;
+  background-color:#333;
+}
+input {
+  color:#CCC;
+  background-color:#333;
+}
+.tablex {
+  border:1px solid #FFF;
+  border-collapse:collapse;
+}
+.tablex td {
+  border:1px solid #FFF;
+}
+/* Not sure why I made a class for this anymore... */
+.statin {
+  
+}
