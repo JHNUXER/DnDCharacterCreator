@@ -36,7 +36,7 @@ Classes = {
   // Melee
   berserker:{
     name:"Berserker",
-    description:""
+    description:"Berserkers are like glass&#013;cannons...they can deal&#013;a lot of damage, but&#013;they can't take very much."
   },
   tank:{
     name:"Tank",
@@ -59,7 +59,13 @@ Classes = {
   blueMage:{
     name:"Blue Mage",
     description:""
+  },
+  // Rogue
+  assassin:{
+    name:"Assassin",
+    description:""
   }
+  // Cleric
 };
 
 iClasses = 1;
