@@ -33,37 +33,41 @@ StatValues = {
   "VIT":0
 };
 Classes = {
-  // Melee
+  // Fighter
   berserker:{
     name:"Berserker",
     description:"Berserkers are like glass cannons...they can deal a lot of damage, but they can't take very much."
   },
   tank:{
     name:"Tank",
-    description:""
+    description:"Tanks are the opposite of Berserkers They can take a ton of damage, and carry a ton of armor, but tend to lack a bit in the offensive capabilities."
   },
   knight:{
     name:"Knight",
-    description:""
+    description:"Knights wear medium-heavy armor and tend to carry heavy shields and weaponry, though often at the sacrifice of movement speed. The knight may also gain support abilities."
   },
   paladin:{
     name:"Paladin",
-    description:""
+    description:"The paladin is a Fighter with the power of Light and healing magic, as well as defensive buffs for their allies. Their devotion to their deity gives them various prayers and healing abilities."
   },
+  darkKnight:{
+    name:"Dark Knight",
+    description:"The dark knight is the opposite of the paladin, possessing powers of darkness, and often necromantic or dark-magic abilities (often which cost HP)."
+  }
   // Ranger
   // Mage
   wizard:{
     name:"Wizard",
-    description:""
+    description:"These mages learn to study and wield magic, usually taking years of study, and leaving them out of shape...usually."
   },
   blueMage:{
-    name:"Blue Mage",
-    description:""
+    name:"Mimic",
+    description:"These mages learn various spells and special abilities from monsters encountered in travel. They can only copy abilities and spells which they have seen in action, or cast an absorbtion spell to retain the ability."
   },
   // Rogue
   assassin:{
     name:"Assassin",
-    description:""
+    description:"Highly offensive rogues, sacrificing technical expertese for better stealth and killing abilities, Assassins are skilled at poisoning and weakening their prey. They specialize in taking down foes efficiently and quietly."
   }
   // Cleric
 };
