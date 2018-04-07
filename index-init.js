@@ -36,7 +36,7 @@ Classes = {
   // Melee
   berserker:{
     name:"Berserker",
-    description:"Berserkers are like glass&#013;cannons...they can deal&#013;a lot of damage, but&#013;they can't take very much."
+    description:"Berserkers are like glass cannons...they can deal a lot of damage, but they can't take very much."
   },
   tank:{
     name:"Tank",
@@ -71,6 +71,22 @@ Classes = {
 iClasses = 1;
 
 // EFuncs:
+
+tPars = function(text) {
+  var nl = "&#013;";
+  var lines = [];
+  while (text.length > 0) {
+    var lek = text.substring(0,Math.min(text.length,48));
+    lines.push(lek);
+    text = text.substring(48,text.length);
+  }
+  var s0 = "";
+  for (var i in lines) {
+    s0 += lines[i];
+    if (i < lines.length) s0 += nl;
+  }
+  return s0.replace(nl+" ",nl).replace(" "+nl,nl);
+}
 
 addClass = function() {
   var cinID = "classin"+(iClasses-1);
