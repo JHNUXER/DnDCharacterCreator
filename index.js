@@ -12,6 +12,7 @@ function getHTTPParam(parameterName) {
   return result;
 }
 
+
 StatInputs = {
   "AGI":agiin,
   "CHR":chrin,
@@ -51,6 +52,8 @@ racein.addEventListener("change", function() {
     for (var i in Races.human.stats) document.getElementById(knx(i)).innerHTML=0;
 });
 
+
+
 function subtractSP(sp) {
   var nx = parseInt(spout.innerHTML)-sp;
   if (nx < 0) return false;
@@ -77,9 +80,8 @@ for (var s in StatInputs) {
     updateUI(source);
   });
 }
-
 for (var cC in Classes) {
-  classin0.innerHTML+="<option value=\""+cC+"\" title=\""+Classes[cC].description+"\">"+Classes[cC].name+"</option>";
+  classin0.innerHTML+="<option value=\""+cC+"\" title=\""+tPars(Classes[cC].description)+"\">"+Classes[cC].name+"</option>";
 }
 
 function getRace() {
