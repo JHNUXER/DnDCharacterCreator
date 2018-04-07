@@ -7,4 +7,4 @@ Currently to save the character, you have to click "GetJSON", then copy paste th
 
 #### Setting:
   The game is set in a Futuristic universe with many planets and varying levels of technological development. This game is built on a techno-fantasy hybrid world.
-  
+   
