@@ -1,0 +1,142 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <script src="index-init.js"></script>
+    <div style="display:flex">
+      <table>
+        <tbody>
+          <tr>
+            <td><b>NAME:</b></td>
+            <td><input id="namein" class="batang"></td>
+          </tr>
+          <tr>
+            <td><b>RACE:</b></td>
+            <td>
+              <select class="batang" id="racein">
+                <option value="null"></option>
+                <option value="human" title="lifetime:78&#013;  Vulnerable to almost&#013;everything, Humans aren't&#013;particularly special, and&#013;gain +1 to all stats.">Human</option>
+                <option value="demon" title="immortal&#013;Exceptionally resistant to&#013;fire, but vulnerable to cold,&#013;Demons are particularly&#013;useful for melee and&#013;magic-melee classes.&#013;STR+5,INT+2,END+3">Demon</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><b>GENDER:</b></td>
+            <td>
+              <select class = "batang" id="sexin">
+                <option value="null"></option>
+                <option value="f">Female</option>
+                <option value="m">Male</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><b>CLASS:</b></td>
+            <td id="classins">
+              <select class="batang" id="classin0">
+                <option value="null"></option>
+              </select>
+              <button onclick="addClass();">+</button>
+            </td>
+          </tr>
+          <tr>
+            <td><b>ALIGNMENT:</b></td>
+            <td>
+              <select class="batang" id="cnlin">
+                <option value="null"></option>
+                <option value="lawful">Lawful</option>
+                <option value="neutral">Neutral</option>
+                <option value="chaotic">Chaotic</option>
+              </select>
+              <select class="batang" id="engin">
+                <option value="null"></option>
+                <option value="good">Good</option>
+                <option value="neutral">Neutral</option>
+                <option value="evil">Evil</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><b>LEVEL:</b></td>
+            <td><span id="level">1</span></td>
+          </tr>
+          <tr>
+            <td><b>STATS:</b><br><b>SP:&nbsp;</b><span id="spout">30</span></td>
+            <td>
+              <table class="tablex">
+                <tbody>
+                  <tr>
+                    <td><b>STAT</b></td>
+                    <td><b>BASE</b></td>
+                    <td><b>BONUS</b></td>
+                  </tr>
+                  <tr>
+                    <td><b>AGI</b></td>
+                    <td><input type="number" min="0" max="100" class="batang statin" id="agiin" value="0"></td>
+                    <td><center id="agibonusout">0</center></td>
+                  </tr>
+                  <tr>
+                    <td><b>CHR</b></td>
+                    <td><input type="number" min="0" max="100" class="batang statin" id="chrin" value="0"></td>
+                    <td><center id="chrbonusout">0</center></td>
+                  </tr>
+                  <tr>
+                    <td><b>DEX</b></td>
+                    <td><input type="number" min="0" max="100" class="batang statin" id="dexin" value="0"></td>
+                    <td><center id="dexbonusout">0</center></td>
+                  </tr>
+                  <tr>
+                    <td><b>END</b></td>
+                    <td><input type="number" min="0" max="100" class="batang statin" id="endin" value="0"></td>
+                    <td><center id="endbonusout">0</center></td>
+                  </tr>
+                  <tr>
+                    <td><b>FOR</b></td>
+                    <td><input type="number" min="0" max="100" class="batang statin" id="forin" value="0"></td>
+                    <td><center id="forbonusout">0</center></td>
+                  </tr>
+                  <tr>
+                    <td><b>INT</b></td>
+                    <td><input type="number" min="0" max="100" class="batang statin" id="intin" value="0"></td>
+                    <td><center id="intbonusout">0</center></td>
+                  </tr>
+                  <tr>
+                    <td><b>LUC</b></td>
+                    <td><input type="number" min="0" max="100" class="batang statin" id="lucin" value="0"></td>
+                    <td><center id="lucbonusout">0</center></td>
+                  </tr>
+                  <tr>
+                    <td><b>PER</b></td>
+                    <td><input type="number" min="0" max="100" class="batang statin" id="perin" value="0"></td>
+                    <td><center id="perbonusout">0</center></td>
+                  </tr>
+                  <tr>
+                    <td><b>STR</b></td>
+                    <td><input type="number" min="0" max="100" class="batang statin" id="strin" value="0"></td>
+                    <td><center id="strbonusout">0</center></td>
+                  </tr>
+                  <tr>
+                    <td><b>VIT</b></td>
+                    <td><input type="number" min="0" max="100" class="batang statin" id="vitin" value="0"></td>
+                    <td><center id="vitbonusout">0</center></td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <script src="index.js"></script>
+      <div style="width:190px;">
+        <textarea id="jsonout" style="width:260px;height:365px;"></textarea><br>
+        <button onclick="getJSON();">GetJSON</button>
+        <button onclick="jsonout.innerHTML='';">ClearJSON</button>
+      </div>
+      <script>jsonout.style.resize="none";</script>
+    </div>
+    <center>
+
+    </center>
+  </body>
+</html>
