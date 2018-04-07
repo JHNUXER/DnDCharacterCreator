@@ -53,7 +53,7 @@ Classes = {
   darkKnight:{
     name:"Dark Knight",
     description:"The dark knight is the opposite of the paladin, possessing powers of darkness, and often necromantic or dark-magic abilities (often which cost HP)."
-  }
+  },
   // Ranger
   // Mage
   wizard:{
